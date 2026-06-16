@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JourneyHub</title>
+    {% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">JourneyHub</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Bus</a></li>
+            <li><a href="#">Train</a></li>
+            <li><a href="#">Flight</a></li>
+            <li><a href="#">Packages</a></li>
+            <!-- <li><a href="#">Services</a></li> -->
+        </ul>
+        <div class="buttons">
+            <a href="#" class="login-btn">Login</a><br>
+            <a href="#" class="signup-btn">Sign Up</a>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="overlay">
+
+            <h1>Explore The World With JourneyHub</h1>
+            <p>Discover amazing destinations and unforgettable adventure</p>
+
+            <p>Book Buses, Trains, Flights and Tour Packages Easily</p>
+
+            <div class="search-box">
+                <input type="text" placeholder="From">
+                <input type="text" placeholder="Destination">
+                <input type="date">
+                <button>Search</button>
+                {% comment %} <a href="Map.html">
+                <button>Show Map →</button>
+                </a> {% endcomment %}
+                <a href="{% url 'map' %}">map</a>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="card">
+                <h3>🚌 Bus Booking</h3>
+                <p>Easy and affordable bus booking.</p>
+            </div>
+            <div class="card">
+                <h3>🚆 Train Booking</h3>
+                <p>Book train tickets quickly.</p>
+            </div>
+            <div class="card">
+                <h3>✈ Flight Booking</h3>
+                <p>Find best flight deals.</p>
+            </div>
+            <div class="card">
+                <h3>🏖 Tour Packages</h3>
+                <p>Explore amazing destinations.</p>
+            </div>
+        </div>
+    </section>
+    <section class="destination">
+        <h2>Popular Destinations</h2>
+        <div class="destination-container">
+            <div class="place">
+              <img src="https://static.vecteezy.com/system/resources/previews/032/475/205/non_2x/hawa-mahal-the-temple-of-the-winds-jaipur-rajasthan-india-hawa-mahal-palace-palace-of-the-winds-in-jaipur-rajasthan-ai-generated-free-photo.jpg">
+                <h3>Jaipur</h3>
+            </div>
+            <div class="place">
+                <img src="https://res.cloudinary.com/dail4fbms/image/upload/w_1200,h_630,c_fill,g_auto,f_auto,q_auto,fl_lossy/v1769513922/Picture_of_Manali_Himachal_Pradesh_India_ef82e02f67.png">
+                <h3>Manali</h3>
+            </div>
+            <div class="place">
+                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963">
+                <h3>Goa</h3>
+            </div>
+          </div>
+    </section>
+    <footer>
+
+        <h3>JourneyHub</h3>
+        <p>Travel Smart, Travel Easy</p>
+        <p>© 2026 All Rights Reserved</p>
+
+    </footer>
+</body>
+</html>
+</body>

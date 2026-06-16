@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    {% comment %} <a href="index.html">Home</a> {% endcomment %}
+     <a href="{% url 'index' %}">index</a>
+
+</div>
+</nav>
+
+<section class="map-page">
+
+    <h1>🗺️ Explore Destinations on Map</h1>
+
+    <div class="map-box">
+
+        <!-- Google Maps Embed Link -->
+<iframe
+width="100%"
+height="600"
+frameborder="0"
+scrolling="no"
+marginheight="0"
+marginwidth="0"
+src="https://maps.google.com/maps?q=jaipur&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+    </div>
+ <div style="text-align:center; margin:30px;">
+    {% comment %} <a href="services.html">
+        <button>Explore Services →</button>
+    </a> {% endcomment %}
+     <a href="{% url 'services' %}">services</a>
+    <div class="info-card">
+        <h2>Popular Destination</h2>
+        <p>Jaipur, Rajasthan</p>
+        <p>Best Time: October - March</p>
+    </div>
+
+</section>
+
+</body>
+</html>
